@@ -10,9 +10,7 @@ name: Build OpenWrt lede diy
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: '0 17 * * 0'
-  inputs:
+   inputs:
       ssh:
         description: 'SSH connection to Actions'
         required: false
